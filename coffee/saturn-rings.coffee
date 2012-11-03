@@ -37,7 +37,7 @@ class Saturn.Rings extends THREE.Geometry
       @vertices.push( new THREE.Vertex( v3 ) )
       @vertices.push( new THREE.Vertex( v4 ) )
 
-    for i in [0..iVer]
+    for i in [0..(iVer-1)]
       @faces.push(new THREE.Face3( i * 4, i * 4 + 1, i * 4 + 2))
       @faces.push(new THREE.Face3( i * 4, i * 4 + 2, i * 4 + 3))
       @faceVertexUvs[ 0 ].push( [
